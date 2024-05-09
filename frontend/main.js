@@ -15,10 +15,10 @@ const getVisitCount = () =>{ // arrow function used to create readable block of 
     fetch(functionApi).then(Response =>{ // fetches the api url from where its kept
         return Response.json() // .then stores it as JSON for easier handling.
     }).then(Response =>{
-        console.log("Website called function API.");
-        count = Response.count;
-        document.getElementById("Counter").innerText = count;
-    }).catch(function(error){
+        console.log("Website called function API."); // checking if the website calls api function
+        count = Response.count; // sets joins api response with count
+        document.getElementById("Counter").innerText = count; // add the visiter count to the html where ID is "counter"
+    }).catch(function(error){ // basic error handling
         console.log(error);
     });
     return count;
