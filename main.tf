@@ -23,5 +23,5 @@ resource "azurerm_resource_group" "rg"{
     }
 }
 resource "cosmosdb_account" "name" {
-  
+    
 }
