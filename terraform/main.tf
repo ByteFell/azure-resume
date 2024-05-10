@@ -22,6 +22,3 @@ resource "azurerm_resource_group" "rg"{
         source = "Terraform"
     }
 }
-resource "cosmosdb_account" "name" {
-    
-}
